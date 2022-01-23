@@ -74,11 +74,34 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("#blanks").submit(function(event) {
-      var nameInput = $("input#name").val();
-      var emailInput = $("input#email").val();
-      var messageInput = $("input#message").val();
-      $(".name").text(nameInput);
-      $(".email").text(emailInput);
-      $(".message").text(messageInput);
-   });
+
+      var nameOneInput = $("input#firstName").val();
+      var nameTwoInput = $("input#surName").val();
+      var emailInput = $("input#emailAddress").val();
+      // var nameInput = $("input#maritalStatus").val();
+      // var emailInput = $("input#Emailaddress").val();
+      // var messageInput = $("input#car").val();
+      $(".firstName").text(nameOneInput);
+      $(".surName").text(nameTwoInput);
+      $(".emailAddress").text(emailInput);
+
+      // alert("working")
+
+     $("#onSubmit").show();
+
+     event.preventDefault();
   });
+
+});
+
+
+
+$(document).ready(function(){
+$("Id4").mouseover(function(){
+$(".overlay4").show({opacity: '1'});
+}).mouseout(function(){
+$(".overlay4").hide({opacity: '0'});
+
+});
+
+});

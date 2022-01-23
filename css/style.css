@@ -21,3 +21,39 @@
 h1,h6{
     margin-top: 4%;
 }
+
+#aboutUs{
+    text-align: center;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15%;
+  }
+  #whatwedo{
+    text-align: center;
+    font: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    padding: 0.6rem;
+  }
+  .hide{
+      display: none;
+  }
+
+#portfolio{
+    text-align: center;
+    font: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+#whatwedo{
+    text-align: center;
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    padding: 0.6rem;
+  }
+.column{
+    width:33.33%;
+    /* margin: 2px; */
+
+  }

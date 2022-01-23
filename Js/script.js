@@ -26,6 +26,7 @@ $(document).ready(function() {
       $("#develop-show").toggle();
       $("#develop-show").css("textAlign","center");
       $("p,h6")
+
       .on("mouseenter",function() {
         $(this).css({
           "font-weight":"bolder"
@@ -62,15 +63,15 @@ $(document).ready(function() {
     })
   })
 
-//   $(document).ready(function(){
+  $(document).ready(function(){
 
-//     $("Id4work4").mouseover(function(){
-//       $(".overlay4").show({opacity: '1'});
-//     }).mouseout(function(){
-//       $(".overlay4").hide({opacity: '0'});
-//     });
+    $("column1").mouseover(function(){
+      $(".overlay4").css({opacity: '1'});
+    }).mouseout(function(){
+      $(".overlay4").css({opacity: '0'});
+    });
   
-//     });
+    });
 
 $(document).ready(function() {
   $("#blanks").submit(function(event) {

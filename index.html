@@ -41,23 +41,23 @@
             <div class="row">
                 <div class="column" id="design">
                     <div class="firstClick">
-                        <img id="design" src="../services_icons/design_icon.png" alt="Design Icon" >
+                        <img id="design" src="../services_icons/design_icon.png" alt="Design Icon" style="width:50%" >
                     </div>
-                    <h2>DESIGN</h2>
+                    <h6>DESIGN</h6>
                     <p class="hide" id="design-show">Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing. Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
                 </div>
                 <div class="column" id="develop">
                     <div class="secondClick">
-                    <img id="develop" src="../services_icons/dev_icon.png" alt="device icon">
+                    <img id="develop" src="../services_icons/dev_icon.png" alt="device icon" style="width:50%">
                     </div>
-                    <h2>DEVELOPMENT</h2>
+                    <h6>DEVELOPMENT</h6>
                     <p class="hide" id="develop-show">All engineers are fluent in the latest enterprise, mobile and web development technologies. They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
                 </div>
                 <div class="column" id="product">
                     <div class="thirdClick">
-                    <img id ="product" src="../services_icons/product_icon.png" alt="product icon">
+                    <img id ="product" src="../services_icons/product_icon.png" alt="product icon" style="width:50%">
                 </div>
-                    <h2>PRODUCT MANAGEMENT</h2>
+                    <h6>PRODUCT MANAGEMENT</h6>
                     <p class="hide" id="product-show">Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.</p>
                 </div>
 
@@ -105,16 +105,120 @@
     </div>    
     <div class="container">
         <img src="../bgImages/c_image.jpg" alt="contactBg" id="Bground3"> 
-        <div class="centered"><br>
-           <form>
+        <div class="centered">
+            <h3>Contact Us</h3>
+            <form>
                <div class="row">
-                   <div >
-
-                   </div>
-
+                    <div class="col-md-4" id="beverages">
+                        <h6>Favorite Beverage</h6>
+                        <input type="radio" id="coffee" name="beverage" value="Coffee" checked=checked/>
+                        <label for="coffee">Coffee</label><br>
+                        <input type="radio" id="tea" name="beverage" value="Tea">
+                        <label for="tea">Tea</label><br>
+                        <input type="radio" id="chocolate" name="beverage" value="Chocolate">
+                        <label for="chocolate">Chocolate</label><br><br>
+                    </div>
+                    <div  class="col-md-4" id="car selection">
+                        <label for="cars">Select Best Car Brand:</label>
+                        <select name="cars" id="cars">
+                            <option value="0">Audi</option>
+                            <option value="1">BMW</option>
+                            <option value="2">Ford</option>
+                            <option value="3">Honda</option>
+                            <option value="4">Jaguar</option>
+                            <option value="5">Land Rover</option>
+                            <option value="6">Mercedes</option>
+                            <option value="7">Nissan</option>
+                            <option value="8">Toyota</option>
+                            <option value="9">Volvo</option>
+                        </select>
+                        <label for="Marriage Status">Choose Marital Status:</label>
+                        <select name="Marriage Status" id="Marital Status">
+                            <option value="default">Single</option>
+                            <option value="1">Married</option>
+                            <option value="2">Divorsed</option>
+                            <option value="3">Seperated</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4" id="gender">
+                    <label for="gender">Check Gender:</label>
+                    <label class="container">Male
+                        <input type="checkbox" value= "" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Female
+                        <input type="checkbox" unchecked="unchecked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">others
+                        <input type="checkbox" unchecked="unchecked">
+                        <span class="checkmark"></span>
+                    </label>
+                    </div>
                </div>
-           </form>
+                <div class="row">  
+                    <div class="col-md-4" id="fillForm">
+                        <div class="form-group">
+                            <label for="firstname">Firstname:</label>
+                            <input id="firstname" class="form-control" type="text" placeholder="Firstname" required>
+                        </div>
+                    </div>    
+                    <div class="col-md-4" id="fillForm">    
+                        <div class="form-group">
+                            <label for="surname">Surname:</label>
+                            <input id="surname" class="form-control" type="text" placeholder="Surname" required>
+                        </div>
+                    </div>    
+                    <div class="col-md-4" id="fillForm">    
+                        <div class="form-group">
+                            <label for="emailAdress">EmailAdress:</label>
+                            <input id="EmailAdress" class="form-control" type="text" placeholder="@emailAdress" required>
+                        </div>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col-md-4" id="fillForm">    
+                        <div class="form-group">
+                            <label for="born">Date of birth:</label>
+                            <input id="born" class="form-control" type="date">
+                        </div>
+                    </div>
+                    <div class="col-md-8" id="fillForm">    
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <input id="message" class="form-control" type="text" placeholder="Enter your message here...">
+                        </div>
+                    </div>
+                </div>  
+                <button type="submit" class="btn">Submit</button>
+            </form>
         </div>
+    </div>
+    <!-- <div>
+
+        <p>Thank you ,  <span class="surname"></span>  <span class="person2"></span> were walking through the woods, when suddenly a giant <span class="animal"></span> appeared. "<span class="exclamation"></span>", <span class="person1"></span> cried. The two of them <span class="verb"></span> as quickly possible, and when they were safe, <span class="person1"></span> and <span class="person2"></span> gave each other a giant <span class="noun"></span>.</p>
+    </div> -->
+        <div class="socialContainer">
+            <div class="row">
+                <div class="column2" id="socialIcon">
+                    <img src="social_icons/behance.png" alt="behance icon">
+                    <img src="social_icons/dribble.png"alt="dribble icon">
+                    <img src="social_icons/facebook.png" alt="facebook icon">
+                    <img src="social_icons/flickr.png" alt="flick icon">
+                    <img src="social_icons/g_plus.png" alt="Gplus icon">
+                    <img src="social_icons/pinterest.png" alt="printrest icon">
+                    <img src="social_icons/skype.png" alt="skype icon">
+                    <img src="social_icons/stumble_upon.png" alt="stumble_upon icon">
+                    <img src="social_icons/twitter.png" alt="twitter icon">
+                    <img src="social_icons/you_tube.png" alt="youtube Icon">
+                </div>    
+            </div>
+            <div class="copyRight" id="copyRight">
+                <h2>DELANI STUDIO</h2>
+                <h6>2019</h6>
+            </div>
+        </div>
+        
     </div>
 
 
